@@ -12,7 +12,7 @@ Install Git for Windows:
 https://gitforwindows.org/
 ```
 
-## Posh-Git and Oh-My-Posh
+## Posh-Git + Oh-My-Posh + TERMINAL-ICONS
 Install Posh-Git:
 ```
 Install-Module posh-git -Scope CurrentUser
@@ -21,6 +21,11 @@ Install-Module posh-git -Scope CurrentUser
 Install Oh-My-Posh:
 ```
 Install-Module oh-my-posh -Scope CurrentUser
+```
+
+Install TERMINAL-ICONS:
+```
+Install-Module -Name Terminal-Icons -Repository PSGallery
 ```
 
 ## Modify ```$PROFILE```
@@ -39,6 +44,7 @@ Add below statements to the file:
 ```
 Import-Module posh-git
 Import-Module oh-my-posh
+Import-Module -Name Terminal-Icons
 Set-PoshPrompt -Theme plague
 ```
 
